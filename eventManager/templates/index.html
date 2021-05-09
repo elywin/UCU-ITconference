@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>DevFestConference</title>
+    {% load static %}
+    <!-- css -->
+    
+     <link rel="stylesheet" href="{% static 'bower_components/bootstrap/dist/css/bootstrap.min.css'%}">
+        <link rel="stylesheet" href="{% static 'assets/css/main.css'%}">
+        {% comment %} <link rel="stylesheet" href="{% static 'bower_components/ionicons/css/ionicons.min.css'%}"> {% endcomment %}
+        
+</head>
+<body data-spy="scroll" data-target="#site-nav">
+    <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
+        <div class="container">
+            <div class="navbar-header">
+
+                <!-- logo -->
+                <div class="site-branding">
+                    <a class="logo" href="{% url 'index' %}">
+                        
+                        <!-- logo image  -->
+                        <img style="width: 5%;" src="{% static 'assets/images/ucu2.gif' %}" alt="Logo">
+
+                       #DevFest Conference 2021
+                    </a>
+                </div>
+
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div><!-- /.navbar-header -->
+
+            <div class="collapse navbar-collapse" id="navbar-items">
+                <ul class="nav navbar-nav navbar-right">
+
+                    <!-- navigation menu -->
+                    <li class="active"><a data-scroll href="#about">About</a></li>
+                    <li><a data-scroll href="#speakers">Speakers</a></li>              
+                    <li><a data-scroll href="#schedule">Schedule</a></li>                  
+                    <li><a data-scroll href="#partner">Partner</a></li>                  
+                    <li><a data-scroll href="#faq">FAQ</a></li>
+                    
+                
+                </ul>
+            </div>
+        </div><!-- /.container -->
+    </nav>
+
+    <header id="site-header" class="site-header valign-center"> 
+        <div class="intro">
+
+            <h2>11 May, 2021 / Uganda Chrisitian University</h2>
+            
+            <h1>#DevFest Conference 2021</h1>
+            
+            <p>First &amp; Largest Developer Conference</p>
+            
+            <a class="btn btn-white" data-scroll href="#registration">Register Now</a>
+
+            
+        
+        </div>
+    </header>
+
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+
+                    <h3 class="section-title">About Us</h3>
+
+                    <p>GDG DevFests are large, community-run developer events happening around the globe 
+                        focused on community building and learning about Google’s technologies.
+
+                        GDGs are for developers who are interested in Google's developer technology;
+                         from Android, Chrome. Drive and Google Cloud platforms to product APIs like the Cast API,
+                          Maps API and YouTube API.
+                        </p>
+
+                    <figure>
+                        <img alt="" class="img-responsive" src="{% static 'assets/images/about.jpg' %}">
+                    </figure>
+
+                </div><!-- /.col-sm-6 -->
+
+                <div class="col-sm-6">
+
+                    <h3 class="section-title multiple-title">What is Our Goal?</h3>
+
+                    <p> This year Uganda Christian University through the department of computing and technology will hold DevFest 2021 alongside 
+                        other developer communities and Industry players to experience sessions on Cloud,
+                         Machine Learning, Mobile and Web technologies.
+                        
+                        The overall objective of the event:
+                        
+                        Equipping participants with different skills and knowledge required for them to 
+                        compete in the industry and run successful technology companies.
+                        
+                        Introducing and showcasing products and equipping organisations and institutions with the required skills to use the products.
+                    </p>
+                        
+                       <strong> Target Audience:</strong>
+                        <ul>
+                            <li> Software Developers</li>
+                            <li>DevOps Engineers</li>
+                            <li>Entrepreneurs</li>
+                            <li> University students</li>
+                            <li>Partner organisations, companies and institutions</li>
+
+                        </ul>
+                        <br>
+                      <strong>What to expect:</strong>
+
+                    <ul class="list-arrow-right">
+
+                        <li>Learn Google Cloud Platform - Databases [Guillaume, GDE]</li>
+                        <li>Building Scalable Applications with Service Oriented Architecture </li>
+                        <li>Mobile Development and Earning from It</li>
+                        <li>The Four Steps to Android Machine Learning</li>
+                        <li>Network Automation with Google Cloud</li>
+                        <li>Introduction to Swift for Tensorflow</li>
+                    
+                    </ul>
+
+                </div><!-- /.col-sm-6 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section>
+
+    <section id="facts" class="section bg-image-1 facts text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+
+                    <i class="ion-ios-calendar"></i>
+                    <h3>2021<br>May 11</h3>
+                
+                </div>
+                <div class="col-sm-3">
+
+                    <i class="ion-ios-location"></i>
+                    <h3>Uganda Chrisitian University<br>Mukono<br>Nkoyoyo Hall</h3>
+                
+                </div>
+                <div class="col-sm-3">
+
+                    <i class="ion-pricetags"></i>
+                    <h3>Unlimited<br>Tickets</h3>
+                
+                </div>
+                <div class="col-sm-3">
+                
+                    <i class="ion-speakerphone"></i>
+                    <h3>03<br>Speakers</h3>
+                
+                </div>
+            </div><!-- row -->
+        </div><!-- container -->
+    </section>
+
+    <section id="speakers" class="section speakers">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <h3 class="section-title">Speakers</h3>
+                
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="{% static 'assets/images/speakers/mtn.jpeg' %}">
+                        </figure>
+
+                        <h4>Jhon Smith</h4>
+
+                        <p>CEO MTN</p>
+
+                        <ul class="social-block">
+                            <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                            <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                            <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                            <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                        </ul>
+
+                    </div><!-- /.speaker -->
+                </div><!-- /.col-md-4 -->
+
+                <div class="col-md-4">
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="{% static 'assets/images/speakers/inovv.jpg' %}">
+                        </figure>
+
+                        <h4>Jhon Smith</h4>
+
+                        <p>CEO Innovation village</p>
+
+                        <ul class="social-block">
+                            <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                            <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                            <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                            <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                        </ul>
+
+                    </div><!-- /.speaker -->
+                </div><!-- /.col-md-4 -->
+
+                <div class="col-md-4">
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="{% static 'assets/images/speakers/outbox.jpeg' %}">
+                        </figure>
+
+                        <h4>Jhon Smith</h4>
+
+                        <p>CEO OutBox</p>
+
+                        <ul class="social-block">
+                            <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                            <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                            <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                            <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                        </ul>
+
+                    </div><!-- /.speaker -->
+                </div><!-- /.col-md-4 -->
+            </div><!-- /.row -->
+
+          
+        </div>
+    </section>
+
+    <section id="registration" class="section registration">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Registration</h3>
+                </div>
+            </div>
+                
+            <form action="{% url 'index' %}" id="registration-form" method="POST" enctype="multipart/form-data">
+             {% csrf_token %}
+                <div class="row">
+                    <div class="col-md-12" id="registration-msg" style="display:none;">
+                        <div class="alert"></div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="First Name" id="fname" name="fname" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Last Name" id="lname" name="lname" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Phone" id="cell" name="cell" required>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Address" id="address" name="address" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Zip Code" id="zip" name="zip" required>
+                        </div>
+
+                        <div class="form-group">
+                           
+                            <input type="text" class="form-control" name="city" id="city" placeholder="District" required>
+
+                        </div>
+                        <div class="form-group">
+                           
+                            <input type="text" class="form-control" name="country" id="country" placeholder="Country" required>
+
+                        </div>
+
+                         <div class="form-group">
+                            <p>Submit Your Contribution Work : </p>
+                             <input class="form-control" type="file" id="paper_file"  name="paper_file" >
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt20">
+                    <input type="submit" class="btn btn-black"  name="register"  value="submit">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="schedule" class="section schedule">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Event Schedule</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="schedule-box">
+                        <div class="time">
+                            <time datetime="09:00">09:00 am</time> - <time datetime="22:00">09:20 am</time>
+                        </div>
+                        <h3>Welcome Remarks [GDG]</h3>
+                     
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="schedule-box">
+                        <div class="time">
+                            <time datetime="10:00">09:20 am</time> - <time datetime="22:00">09:40 am</time>
+                        </div>
+                        <h3>Keynote 1 [Wilson, Innovation Village]</h3>
+                       
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="schedule-box">
+                        <div class="time">
+                            <time datetime="10:00">09:40 am</time> - <time datetime="22:00">10:40 am</time>
+                        </div>
+                        <h3>Google Cloud Platform - Databases [Guillaume, GDE]</h3>
+                      
+                    </div>
+                </div>
+                </div>
+                <br>
+                <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="schedule-box">
+                        <div class="time">
+                            <time datetime="10:00">10:40 am</time> - <time datetime="22:00">10:55 am</time>
+                        </div>
+                        <h3>Break</h3>
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="schedule-box">
+                        <div class="time">
+                            <time datetime="10:00">10:55 am</time> - <time datetime="22:00">11:55 am</time>
+                        </div>
+                        <h3>Building Scalable Applications with Service Oriented Architecture</h3>
+                       
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="schedule-box">
+                        <div class="time">
+                            <time datetime="10:00">11:55 am</time> - <time datetime="22:00">12:55 pm</time>
+                        </div>
+                        <h3>Introduction to Mobile Development and Earning from It</h3>
+                       
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="schedule-box">
+                        <div class="time">
+                            <time datetime="10:00">12:55 pm</time> - <time datetime="22:00">01:55 pm</time>
+                        </div>
+                        <h3>Lunch Break</h3>
+                       
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="schedule-box">
+                        <div class="time">
+                            <time datetime="10:00">01:55 pm</time> - <time datetime="22:00">02:55 pm</time>
+                        </div>
+                        <h3>The Four Steps to Android Machine Learning</h3>
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="schedule-box">
+                        <div class="time">
+                            <time datetime="10:00">02:55 pm</time> - <time datetime="22:00">03:55 pm</time>
+                        </div>
+                        <h3>Network Automation with Google Cloud </h3>
+                        
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="schedule-box">
+                        <div class="time">
+                            <time datetime="10:00">03:55 pm</time> - <time datetime="22:00">04:00 pm</time>
+                        </div>
+                        <h3>Break </h3>
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="schedule-box">
+                        <div class="time">
+                            <time datetime="10:00">04:00 pm</time> - <time datetime="22:00">05:00 pm</time>
+                        </div>
+                        <h3>Introduction to Swift for Tensorflow</h3>
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="schedule-box">
+                        <div class="time">
+                            <time datetime="10:00">05:00 pm</time> - <time datetime="22:00">06:00 pm</time>
+                        </div>
+                        <h3>Panel Session</h3>
+                        
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <section id="partner" class="section partner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Event Partner</h3>
+                </div>
+            </div>
+            <div class="row">
+                
+                <div class="col-sm-3">
+                    <a ><img style="width: 85%;"src="{% static 'assets/images/partner/mtn2.png' %}"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a ><img style="width: 85%;" src="{% static 'assets/images/partner/outbox.jpg' %}"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a ><img style="width: 85%; height: 200px;" src="{% static 'assets/images/partner/innov2.png' %}"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a ><img style="width: 85%; height: 240px;" src="{% static 'assets/images/partner/ucu.jpg' %}"></a>
+                </div>
+            </div>
+
+           
+    </section>
+
+    <section id="faq" class="section faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Event FAQs</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> What is the price of the ticket ?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    <p>Free entry, come one come all</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> What are the topics of the conference?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    <p>Learn Google Cloud Platform - Databases [Guillaume, GDE]</p>
+                                    <p>Building Scalable Applications with Service Oriented Architecture</p>
+                                    <p>Mobile Development and Earning from It</p>
+                                    <p>The Four Steps to Android Machine Learning</p>
+                                    <p>Network Automation with Google Cloud</p>
+                                    <p>Introduction to Swift for Tensorflow</p>
+                                </div>
+                            </div>
+                        </div>
+  
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> Event location ?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">Uganda Christian University, Nkoyoyo Hall,Plot 67-173, Bishop Tucker Road, Mukono  </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFive">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive"> I have specific questions that are not addressed here. Who can help me ?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                <div class="panel-body">
+                                    <p>Phone: +256312350800</p>
+                                    <p>Email: info@ucu.ac.ug</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+    <section id="location" class="section location">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3 class="section-title">Event Location</h3>
+                    <address>
+                        <p>Uganda Christian University<br> Nkoyoyo Hall<br> Plot 67-173, Bishop Tucker Road, Mukono<br> Phone: +256312350800<br> Email: info@ucu.ac.ug</p>
+                    </address>
+                </div>
+                
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7979.479657827853!2d32.73625835757539!3d0.3593957198606433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dc7bd7d9ecc33%3A0xe7db325168bf53ad!2sUganda%20Christian%20University%20Mukono!5e0!3m2!1sen!2sug!4v1620324135661!5m2!1sen!2sug" width="75%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="site-info">&copy;All Rights Reserved <br>  <a href="https://elywin.github.io/">Elywin Michael Lukeera</a></p>
+                    <ul class="social-block">
+                        <li><a href="https://twitter.com/ellywinmichael"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/michael-lukeera-0a84ba127/"><i class="ion-social-linkedin-outline"></i></a></li>
+                        <li><a href="https://github.com/elywin"><i class="ion-social-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script src="{% static 'bower_components/jquery/dist/jquery.min.js'%}"></script>
+    <script src="{% static 'bower_components/bootstrap/dist/js/bootstrap.min.js'%}"></script>
+    <script src="{% static 'bower_components/smooth-scroll/dist/js/smooth-scroll.min.js'%}"></script>
+    <script>
+   $(window).scroll(function(){
+	handleTopNavAnimation();
+});
+
+$(window).load(function(){
+	handleTopNavAnimation();
+});
+
+function handleTopNavAnimation() {
+	var top=$(window).scrollTop();
+
+	if(top>10){
+		$('#site-nav').addClass('navbar-solid'); 
+	}
+	else{
+		$('#site-nav').removeClass('navbar-solid'); 
+	}
+}
+
+</script>
+   
+</body>
+</html>

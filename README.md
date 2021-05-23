@@ -1,6 +1,8 @@
 # UCU-ITconference
 A conference management system in Django
 
+**https://ucuitconference.herokuapp.com/**
+
 # Poject setup
 
 - Clone the project: `git clone https://github.com/elywin/UCU-ITconference.git`

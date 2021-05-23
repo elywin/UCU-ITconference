@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-bj*)%cza=gj&%hskoxw59#k#)=3vq*3f$*fl-=8m#lrt$2e&jc
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['events.herokuapp.com']
 
 
 # Application definition
@@ -132,4 +132,6 @@ STATICFILES_DIRS = (
 MEDIA_ROOT = os.path.join(BASE_DIR,'static/files')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Activate Django-Heroku.
 django_heroku.settings(locals())

@@ -78,24 +78,17 @@
     <section id="about" class="section about">
         <div class="container">
             <div class="row">
+                {% for abt in aboutt %}
                 <div class="col-sm-6">
+                    <h3 class="section-title">{{abt.title}}</h3>
 
-                    <h3 class="section-title">About Us</h3>
-
-                    <p>GDG DevFests are large, community-run developer events happening around the globe 
-                        focused on community building and learning about Google’s technologies.
-
-                        GDGs are for developers who are interested in Google's developer technology;
-                         from Android, Chrome. Drive and Google Cloud platforms to product APIs like the Cast API,
-                          Maps API and YouTube API.
-                        </p>
-
+                    <p>{{abt.description}}</p>
                     <figure>
                         <img alt="" class="img-responsive" src="{% static 'assets/images/about.jpg' %}">
                     </figure>
 
-                </div><!-- /.col-sm-6 -->
-
+                </div>
+                {% endfor %}
                 <div class="col-sm-6">
 
                     <h3 class="section-title multiple-title">What is Our Goal?</h3>

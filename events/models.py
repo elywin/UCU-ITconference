@@ -17,5 +17,10 @@ class Guest(models.Model):
     def __str__(self):
         return self.email
 
-
+class AboutUs(models.Model): 
+    title = models.CharField(max_length=200, default='About Us') 
+    description = models.TextField(max_length=250)
+    
+    def __str__(self):
+        return self.title
   

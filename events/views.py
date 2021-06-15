@@ -1,15 +1,21 @@
 from django.shortcuts import render
 from django.core.files.storage import FileSystemStorage
-from .models import Guest, AboutUs
+from .models import Guest, AboutUs, OurGoal
 
 # Create your views here
 
 
 def index(request):
 
+    # goal = OurGoal.objects.all()
+    # context= {
+    #     'goall':goal,}
+    
     about = AboutUs.objects.all()
     context= {
         'aboutt':about,}
+    
+   
     
     folder = 'static/files'
     if "register" in request.POST:

@@ -24,3 +24,10 @@ class AboutUs(models.Model):
     def __str__(self):
         return self.title
   
+
+class OurGoal(models.Model): 
+    title = models.CharField(max_length=200, default='WHAT IS OUR GOAL?') 
+    description = models.TextField(max_length=5000)
+    
+    def __str__(self):
+        return self.title

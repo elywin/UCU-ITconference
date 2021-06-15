@@ -8,15 +8,9 @@ from .models import Guest, AboutUs, OurGoal
 def index(request):
 
     goal = OurGoal.objects.all()
-    context1= {
-        'goall':goal,}
     
     about = AboutUs.objects.all()
-    context= {
-        'aboutt':about,}
-    
-   
-    
+
     folder = 'static/files'
     if "register" in request.POST:
         fname = request.POST["fname"]

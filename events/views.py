@@ -7,9 +7,9 @@ from .models import Guest, AboutUs, OurGoal
 
 def index(request):
 
-    # goal = OurGoal.objects.all()
-    # context= {
-    #     'goall':goal,}
+    goal = OurGoal.objects.all()
+    context1= {
+        'goall':goal,}
     
     about = AboutUs.objects.all()
     context= {
@@ -36,4 +36,4 @@ def index(request):
                         zip=zip, city=city, cell=cell, paper_file=paper_file)
         Reginfo.save()
 
-    return render(request, "index.html",context)
+    return render(request, "index.html",{"OurGoal": goal,"AboutUs":about})

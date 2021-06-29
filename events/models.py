@@ -32,7 +32,7 @@ class OurGoal(models.Model):
     def __str__(self):
         return self.title
 
-class FAQs(models.MOdel):
+class FAQs(models.Model):
     question = models.CharField(max_length=200)
     answer = models.CharField(max_length=200)
     

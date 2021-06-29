@@ -32,4 +32,4 @@ def index(request):
                         zip=zip, city=city, cell=cell, paper_file=paper_file)
         Reginfo.save()
 
-    return render(request, "index.html",{"OurGoal": goal,"AboutUs":about})
+    return render(request, "index.html",{"OurGoal": goal,"AboutUs":about, "FAQs":faqs})

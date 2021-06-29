@@ -1,4 +1,4 @@
-# UCU-ITconference
+# Event
 A conference management system in Django
 
 **https://ucuitconference.herokuapp.com/**

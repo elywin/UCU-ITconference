@@ -473,11 +473,11 @@
                         <div class="panel panel-default">
                             <div class="panel-heading" role="tab" id="headingOne">
                                 <h4 class="panel-title">
-                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse" aria-expanded="true" aria-controls="collapse">{{faqz.question}}</a>
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#{{faqz.id}}" aria-expanded="true" aria-controls="collapse">{{faqz.question}}</a>
                                 </h4>
                             </div>
 
-                            <div id="collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                            <div id="{{faqz.id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                                 <div class="panel-body">
                                     <p>{{faqz.answer}}</p>
                                 </div>

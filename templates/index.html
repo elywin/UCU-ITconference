@@ -477,13 +477,29 @@
                                 </h4>
                             </div>
 
-                            <div id="{{faqz.id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                            {% comment %} <div class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                                 <div class="panel-body">
                                     <p>{{faqz.answer}}</p>
                                 </div>
-                            </div>
+                            </div> {% endcomment %}
+
+                            {% for subqsn in subquestions%}
+                            {% if faqz.question == 'I have specific questions that are not addressed here. Who can help me ?' %}                           
+                            <div><b>{{subqsn.question}}</b></div>
+                            <div >{{subqsn.answer}}</div>
+                            {% endif %}
+
+                            {% comment %} # Note----> Elywiin use elseif here if u want to include a subquestion for another FAQ{% endcomment %}
+
+                            {% endfor %}
+    
+
+                            
+
                         </div>
                         {% endfor %}
+                        
+
                         <div class="panel panel-default">
                             <div class="panel-heading" role="tab" id="headingTwo">
                                 <h4 class="panel-title">

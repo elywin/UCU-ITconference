@@ -32,9 +32,33 @@ class OurGoal(models.Model):
     def __str__(self):
         return self.title
 
+# class FAQs(models.Model):
+#     question = models.CharField(max_length=200)
+#     answer = models.CharField(max_length=200)
+    
+#     def __str__(self):
+#         return self.question
+
+
 class FAQs(models.Model):
     question = models.CharField(max_length=200)
     answer = models.CharField(max_length=200)
     
     def __str__(self):
         return self.question
+
+
+class Subquestions(models.Model):
+    question       = models.CharField(FAQs, max_length=200, blank=True, null=True)
+    answer         = models.CharField(max_length=200)
+    subquestion    = models.ManyToManyField(FAQs, max_length=200, blank=True, null=False, through='Interconnector')
+   
+    def __str__(self):
+        return str(self.question)
+
+class Interconnector(models.Model):  # Interconnector for the two models
+    faq          = models.ForeignKey(FAQs, on_delete=models.CASCADE)
+    subquestion  = models.ForeignKey(Subquestions, on_delete=models.CASCADE)
+    
+
+    

@@ -1,17 +1,23 @@
-from django.shortcuts import render
+from django.shortcuts import render,  get_object_or_404
 from django.core.files.storage import FileSystemStorage
-from .models import Guest, AboutUs, OurGoal, FAQs
+from .models import Guest, AboutUs, OurGoal, FAQs, Subquestions, Interconnector
 
 # Create your views here
 
 
-def index(request):
+def index(request, ):
 
     goal = OurGoal.objects.all()
     
     about = AboutUs.objects.all()
     
     faqs = FAQs.objects.all()
+
+    subquestions = Subquestions.objects.all()
+
+    interconnectors = Interconnector.objects.all()
+
+
 
     folder = 'static/files'
     if "register" in request.POST:
@@ -32,4 +38,4 @@ def index(request):
                         zip=zip, city=city, cell=cell, paper_file=paper_file)
         Reginfo.save()
 
-    return render(request, "index.html",{"OurGoal": goal,"AboutUs":about, "FAQs":faqs})
+    return render(request, "index.html",{"OurGoal": goal,"AboutUs":about, "FAQs":faqs, "subquestions":subquestions, " interconnectors":  interconnectors})

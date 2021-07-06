@@ -25,8 +25,9 @@
                         
                         <!-- logo image  -->
                         <img style="width: 5%;" src="{% static 'assets/images/ucu2.gif' %}" alt="Logo">
-
-                       #DevFest Conference 2021
+                    {% for titles in EventTitles%}
+                        {{titles.title}}
+                       {%endfor%}
                     </a>
                 </div>
 
@@ -61,13 +62,11 @@
 
     <header id="site-header" class="site-header valign-center"> 
         <div class="intro">
-
+        {%for titles in EventTitles%}
             <h2>11 May, 2021 / Uganda Chrisitian University</h2>
-            
-            <h1>#DevFest Conference 2021</h1>
-            
-            <p>First &amp; Largest Developer Conference</p>
-            
+           <h1>{{titles.title}}</h1>
+          <p>{{titles.subtitle}}</p>
+         {% endfor %}        
             <a class="btn btn-white" data-scroll href="#registration">Register Now</a>
 
             

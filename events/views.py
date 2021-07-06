@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.core.files.storage import FileSystemStorage
-from .models import Guest, AboutUs, OurGoal, FAQs
+from .models import Guest, AboutUs, OurGoal, FAQs, EventTitles
 
 # Create your views here
 
@@ -12,6 +12,8 @@ def index(request):
     about = AboutUs.objects.all()
     
     faqs = FAQs.objects.all()
+    
+    titles = EventTitles.objects.all()
 
     folder = 'static/files'
     if "register" in request.POST:
@@ -32,4 +34,4 @@ def index(request):
                         zip=zip, city=city, cell=cell, paper_file=paper_file)
         Reginfo.save()
 
-    return render(request, "index.html",{"OurGoal": goal,"AboutUs":about, "FAQs":faqs})
+    return render(request, "index.html",{"OurGoal": goal,"AboutUs":about, "FAQs":faqs, "EventTitles":titles})

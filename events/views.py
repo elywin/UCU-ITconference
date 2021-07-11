@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.core.files.storage import FileSystemStorage
-from .models import Guest, AboutUs, OurGoal, FAQs, EventTitles
+from .models import *
 
 # Create your views here
 
@@ -12,7 +12,7 @@ def index(request):
     about = AboutUs.objects.all()
     
     faqs = FAQs.objects.all()
-    
+        
     titles = EventTitles.objects.all()
 
     folder = 'static/files'

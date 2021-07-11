@@ -477,9 +477,11 @@
                             </div>
 
                             <div id="{{faqz.id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                               {% for ans in faqz.answer.all %}
                                 <div class="panel-body">
-                                    <p>{{faqz.answer}}</p>
+                                    <p>{{ans}}</p>
                                 </div>
+                                {% endfor %}
                             </div>
                         </div>
                         {% endfor %}

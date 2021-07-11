@@ -32,9 +32,15 @@ class OurGoal(models.Model):
     def __str__(self):
         return self.title
 
+class Answer(models.Model):
+    answer = models.CharField(max_length=200, null=True)
+    
+    def __str__(self):
+        return self.answer
+
 class FAQs(models.Model):
     question = models.CharField(max_length=200)
-    answer = models.CharField(max_length=200)
+    answer = models.ManyToManyField(Answer)
     
     def __str__(self):
         return self.question

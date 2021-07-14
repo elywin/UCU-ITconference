@@ -83,10 +83,10 @@
                     <h3 class="section-title">{{abt.title}}</h3>
 
                     <p>{{abt.description}}</p>
-                    {% endfor %}
                     <figure>
-                        <img alt="" class="img-responsive" src="{% static 'assets/images/about.jpg' %}">
+                        <img alt="" class="img-responsive" src="{{abt.picture.url}}">
                     </figure>
+                    {% endfor %}
 
                 </div>
                 

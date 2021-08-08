@@ -20,7 +20,7 @@ class Guest(models.Model):
 class AboutUs(models.Model): 
     title = models.CharField(max_length=200, default='About Us') 
     description = models.TextField(max_length=1000)
-    picture = models.ImageField(null=True, blank=True,upload_to='images/',default='images/339c8096.jpg')
+    picture = models.ImageField(null=True, blank=True,upload_to='images/',default='static/files/images/339c8096.jpg')
 
     
     def __str__(self):

@@ -14,6 +14,8 @@ def index(request):
     faqs = FAQs.objects.all()
         
     titles = EventTitles.objects.all()
+    
+    schedule = Schedule.objects.all()
 
     folder2 = 'static/images'
     folder = 'static/files'
@@ -40,4 +42,4 @@ def index(request):
                         zip=zip, city=city, cell=cell, paper_file=paper_file)
         Reginfo.save()
 
-    return render(request, "index.html",{"OurGoal": goal,"AboutUs":about, "FAQs":faqs, "EventTitles":titles})
+    return render(request, "index.html",{"OurGoal": goal,"AboutUs":about, "FAQs":faqs, "EventTitles":titles, "Schedule":schedule})

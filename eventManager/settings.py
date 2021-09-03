@@ -79,8 +79,12 @@ WSGI_APPLICATION = 'eventManager.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.contrib.gis.db.backends.postgis',
+        'NAME':'event',
+        'USER':'postgres',
+        'HOST':'localhost',
+        'PASSWORD':'password',
+        'PORT':'5432',
     }
 }
 
